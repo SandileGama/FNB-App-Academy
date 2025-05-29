@@ -25,11 +25,69 @@
 // }
 
 //Functions file
-var head = document.getElementById('heading2');
-function changeText() {
-    if (head.innerHTML == 'Javascript') {
-        head.innerHTML = ('Javascript is Awesome');
-    } else {
-        head.innerHTML = ('Javascript');
+// var head = document.getElementById('heading2');
+// function changeText() {
+//     if (head.innerHTML == 'Javascript') {
+//         head.innerHTML = ('Javascript is Awesome');
+//     } else {
+//         head.innerHTML = ('Javascript');
+//     }
+// }
+
+// var paragraph = document.getElementById('addition');
+// var paragraph2 = document.getElementById('outputText');
+
+// paragraph.innerHTML = addNumbers(10, 6);
+// paragraph2.innerHTML = someFunction();
+
+// function addNumbers(num1, num2) {
+//     return num1 + num2;
+// }
+
+// function someFunction() {
+//     var someVar = 100;
+//     return someVar;
+// }
+
+// Login form mini project
+// function verifyUser() {
+//     var username = document.getElementById('usernameInput').value;
+//     var password = document.getElementById('passwordInput').value;
+
+//     checkCredentials(username, password);
+// }
+
+// function checkCredentials(username, password) {
+//     var sysUsername = "Sandz";
+//     var sysPassword = "007";
+
+//     if (username == sysUsername && password == sysPassword) {
+//         document.getElementById('message').innerHTML = ('correct! Logging you in...');
+//     } else {
+//         document.getElementById('message').innerHTML = ('Incorrect! Please Try Again');
+//     }
+// }
+
+function btnPressed() {
+    var weatherSelected = document.getElementById('weather').value;
+    var advice;
+
+    switch (weatherSelected) {
+        case "sunny":
+            advice = 'Wear your sunglasses!';
+            break;
+        case "rainy":
+            advice = 'Wear a raincoat and bring and umbrella';
+            break;
+        case "windy":
+            advice = 'Wear a jacket';
+            break;
+        case "snowy":
+            advice = 'Dress warmly';
+            break;
+        case "cloudy":
+            advice = 'Carry a jacket, might rain';
+            break;
     }
+    document.getElementById('outputText').innerHTML = ('Weather advice:' + advice);
 }
