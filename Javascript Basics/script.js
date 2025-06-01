@@ -1,4 +1,4 @@
-//Variable file
+//VARIABLE FILES
 // var text1;
 // var text2;
 // var text2;
@@ -14,7 +14,7 @@
 // document.getElementById('paragraph1').innerHTML = (text2 + ' ' + text3);
 // document.getElementById('paragraph2').innerHTML = (numA + ' x ' + numB + ' = ' + numA * numB);
 
-//Password file
+//PASSWORD FILES
 // var userInputPassword = '017';
 // var actualPassword = '007';
 
@@ -24,7 +24,7 @@
 //     document.getElementById('output').innerHTML = ('Password Incorrect');
 // }
 
-//Functions file
+//FUNCTION FILES
 // var head = document.getElementById('heading2');
 // function changeText() {
 //     if (head.innerHTML == 'Javascript') {
@@ -68,26 +68,44 @@
 //     }
 // }
 
-function btnPressed() {
-    var weatherSelected = document.getElementById('weather').value;
-    var advice;
+// function btnPressed() {
+//     var weatherSelected = document.getElementById('weather').value;
+//     var advice;
 
-    switch (weatherSelected) {
-        case "sunny":
-            advice = 'Wear your sunglasses!';
-            break;
-        case "rainy":
-            advice = 'Wear a raincoat and bring and umbrella';
-            break;
-        case "windy":
-            advice = 'Wear a jacket';
-            break;
-        case "snowy":
-            advice = 'Dress warmly';
-            break;
-        case "cloudy":
-            advice = 'Carry a jacket, might rain';
-            break;
-    }
-    document.getElementById('outputText').innerHTML = ('Weather advice:' + advice);
+//     switch (weatherSelected) {
+//         case "sunny":
+//             advice = 'Wear your sunglasses!';
+//             break;
+//         case "rainy":
+//             advice = 'Wear a raincoat and bring and umbrella';
+//             break;
+//         case "windy":
+//             advice = 'Wear a jacket';
+//             break;
+//         case "snowy":
+//             advice = 'Dress warmly';
+//             break;
+//         case "cloudy":
+//             advice = 'Carry a jacket, might rain';
+//             break;
+//     }
+//     document.getElementById('outputText').innerHTML = ('Weather advice:' + advice);
+// }
+
+//STRINGS AND NUMBERS FILE
+output = document.getElementById('outputText');
+var text1 = 'seven';
+var text2 = '5';
+
+var num1 = stringToNumber(text1);
+var num2 = stringToNumber(text2);
+
+if (isNaN(num1) || isNaN(num2)) {
+    output.innerHTML = 'No valid number entered!';
+} else {
+    output.innerHTML = num1 + num2;
+}
+
+function stringToNumber(text) {
+    return parseInt(text);
 }
