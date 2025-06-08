@@ -45,6 +45,12 @@ body {
     text-align: center;
     text-decoration: none;
     padding-top: 12px;
+    transition: 250ms;
+}
+
+.tabs-top a:hover {
+    font-weight: 200;
+    font-size: 15px;
 }
 
 /*============MAIN-HOME SECTION=============*/

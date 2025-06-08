@@ -1,0 +1,38 @@
+table {
+    color: black;
+    text-align: center;
+    border-collapse: collapse;
+    font: normal 3em Arial, Helvetica, sans-serif;
+}
+
+tr {
+    height: 16vh;
+    background-color: #4e494d;
+}
+
+td {
+    width: 25vw;
+    border: 1px solid blue;
+}
+
+#outputBox {
+    background-color: #4e494d;
+    text-align: right;
+    width: 99%;
+    font-size: 2em;
+    color: darkblue;
+    border: 0px;
+}
+
+.digitBtn {
+    background-color: darkslategray;
+}
+
+.operatorBtn {
+    background-color: orangered;
+}
+
+.ACBtn {
+    background-color: darkslateblue;
+    color: white;
+}
